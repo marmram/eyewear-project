@@ -1,0 +1,133 @@
+/******************************************general style*********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray: rgb(115, 115, 115);
+    --bo-color: rgb(222 217 217);
+    --hover: #fffbf6;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+/******************************************header style*********************************************/
+header {
+    width: 100%;
+}
+
+.top-header {
+    background-color: #F6EBDC;
+    width: 100%;
+
+    gap: 10px;
+}
+
+.top-header p {
+    font-size: 14px;
+}
+
+.top-header a {
+    color: #d39d4e;
+    font-weight: 500;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo-nav-search ul li a {
+    color: var(--gray);
+
+}
+
+.search {
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    color: var(--gray);
+}
+
+.search input {
+    border-radius: 38px;
+    padding: 4px 28px;
+    border: 1px solid var(--bo-color);
+}
+
+.search input:focus-visible {
+    outline: none;
+}
+
+.drop {
+    position: relative;
+}
+
+.drop li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--hover);
+    padding: 13px;
+    top: 25px;
+    left: 28px;
+    border-radius: 8px;
+    width: 100px;
+    
+}
+
+.drop li:hover ul {
+    display: block;
+}
+
+.drop li ul li {
+    transition: all 0.4s;
+    padding: 6px o;
+    border-bottom: 1px solid rgb(222 217 217);;
+    border-right-width: 100%;
+}
+
+.drop li ul li:last-child {
+
+    border-bottom: none;
+}
+.drop li ul li a{
+    padding: 10px;
+}
+
+.drop li ul li:hover{
+    border-left: 2px rgb(205, 68, 68) solid;
+    border-right: 2px rgb(205, 68, 68) solid;
+}
+
