@@ -1,6 +1,6 @@
 /******************************************general style*********************************************/
 * {
-    margin: 0;
+    margin: 0!important;
     padding: 0;
     box-sizing: border-box;
 }
@@ -46,7 +46,9 @@ a {
 }
 
 ul {
-    margin: 0;
+    margin: 0px!important;
+    padding: 0px!important;
+
 }
 
 li {
@@ -174,4 +176,18 @@ header {
     background-attachment: scroll;
     background-size: cover;
 }
-
+.icon-text{
+    line-height: 1.5!important;
+    border-right: solid 1px var(--theme-co);
+}
+.icon-text i{
+    color: var(--theme-co);
+    
+}
+.icon-text span{
+    color: var(--gray);
+    padding: 0 20px;
+}
+.stars i{
+    color: gold;
+}
