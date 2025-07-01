@@ -8,7 +8,23 @@
 :root {
     --gray: rgb(115, 115, 115);
     --bo-color: rgb(222 217 217);
-    --hover: #fffbf6;
+    --drop-co: #fffbf6;
+    --theme-co: #d39d4e;
+    --hover: rgb(82, 78, 78);
+
+}
+.btn-shop{
+    background-color: var(--theme-co);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    
+}
+.btn-shop:hover{
+    background-color: #b68b4c;
+
 }
 
 body {
@@ -93,12 +109,13 @@ header {
 
 .drop {
     position: relative;
+    z-index: 2;
 }
 
 .drop li ul {
     display: none;
     position: absolute;
-    background-color: var(--hover);
+    background-color: var(--drop-co);
     padding: 13px;
     top: 25px;
     left: 28px;
@@ -129,5 +146,32 @@ header {
 .drop li ul li:hover{
     border-left: 2px rgb(205, 68, 68) solid;
     border-right: 2px rgb(205, 68, 68) solid;
+
+}
+/******************************************Slider Style*********************************************/
+
+.slider1{
+    z-index: 1;
+    position: relative;
+}
+.btn-bg:hover{
+    background-color:var(--hover) ;
+    opacity: 0.5;
+    border-radius: 50%;
+
+}
+.slider-bg1{
+    height: 450px;
+    width: 100%;
+    background-image: url(/assets/images/H1_Desktop_1600_520_f2068ac1a9.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+}
+.slider-bg2{
+    height: 450px;
+    width: 100%;
+    background-image: url(/assets/images/Top_Banner_Desktop_5936239d37.jpg);
+    background-attachment: scroll;
+    background-size: cover;
 }
 
