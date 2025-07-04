@@ -1,6 +1,6 @@
 /******************************************general style*********************************************/
 * {
-    margin: 0!important;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -13,16 +13,20 @@
     --hover: rgb(82, 78, 78);
 
 }
-.btn-shop{
+
+.btn-shop {
     background-color: var(--theme-co);
     color: #fff;
     border-radius: 8px;
     font-weight: 500;
     padding: 10px 20px;
     border: none;
-    
+    width: auto;
+    align-self: center;
+
 }
-.btn-shop:hover{
+
+.btn-shop:hover {
     background-color: #b68b4c;
 
 }
@@ -46,8 +50,8 @@ a {
 }
 
 ul {
-    margin: 0px!important;
-    padding: 0px!important;
+    margin: 0px !important;
+    padding: 0px !important;
 
 }
 
@@ -123,7 +127,7 @@ header {
     left: 28px;
     border-radius: 8px;
     width: 100px;
-    
+
 }
 
 .drop li:hover ul {
@@ -133,7 +137,8 @@ header {
 .drop li ul li {
     transition: all 0.4s;
     padding: 6px o;
-    border-bottom: 1px solid rgb(222 217 217);;
+    border-bottom: 1px solid rgb(222 217 217);
+    ;
     border-right-width: 100%;
 }
 
@@ -141,53 +146,192 @@ header {
 
     border-bottom: none;
 }
-.drop li ul li a{
+
+.drop li ul li a {
     padding: 10px;
 }
 
-.drop li ul li:hover{
+.drop li ul li:hover {
     border-left: 2px rgb(205, 68, 68) solid;
     border-right: 2px rgb(205, 68, 68) solid;
 
 }
+
 /******************************************Slider Style*********************************************/
 
-.slider1{
+.slider1 {
     z-index: 1;
-    position: relative;
+    /* position: relative; */
+    margin: auto;
 }
-.btn-bg:hover{
-    background-color:var(--hover) ;
+
+.btn-bg:hover {
+    background-color: var(--hover);
     opacity: 0.5;
     border-radius: 50%;
 
 }
-.slider-bg1{
+
+.slider-bg1 {
     height: 450px;
     width: 100%;
     background-image: url(/assets/images/H1_Desktop_1600_520_f2068ac1a9.jpg);
     background-attachment: scroll;
     background-size: cover;
 }
-.slider-bg2{
+
+.slider-bg2 {
     height: 450px;
     width: 100%;
     background-image: url(/assets/images/Top_Banner_Desktop_5936239d37.jpg);
     background-attachment: scroll;
     background-size: cover;
 }
-.icon-text{
-    line-height: 1.5!important;
+
+.icon-text {
+    line-height: 1.5 !important;
     border-right: solid 1px var(--theme-co);
+    padding: 0 40px;
+
 }
-.icon-text i{
+
+.icon-text i {
     color: var(--theme-co);
-    
+
 }
-.icon-text span{
+
+.star-color {
+    color: #e3731e !important;
+}
+
+.icon-text span {
     color: var(--gray);
-    padding: 0 20px;
 }
-.stars i{
+
+.stars i {
     color: gold;
 }
+
+.vision-h2 {
+    color: var(--theme-co);
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.vision-text a {
+    color: #d3a661;
+}
+
+
+/******************************************Owl Slider*********************************************/
+
+
+.owlItem {
+    margin: 20px;
+}
+
+.owlItem img {
+    width: 100%;
+    max-height: 250px;
+}
+
+.owlItem input {
+    width: 20px;
+    height: 20px;
+
+}
+
+.owl-next:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff !important;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.owl-prev {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff !important;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+
+}
+
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+.radioRed {
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.custom-radio .red:checked+.radioRed {
+    appearance: none;
+    background-color: red;
+}
+.radioGray {
+   
+    border: 2px solid rgb(176, 164, 164);
+   
+}
+
+.custom-radio .gray:checked+.radioGray {
+    appearance: none;
+    background-color:  rgb(176, 164, 164);
+}
+.radioPink {
+    border: 2px solid rgb(255, 106, 210);
+}
+
+.custom-radio .pink:checked+.radioPink {
+    appearance: none;
+    background-color: rgb(255, 106, 210);
+}
+.radioBlack {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.custom-radio .black:checked+.radioBlack {
+    appearance: none;
+    background-color: rgb(0, 0, 0);
+}
+.padding{
+    padding: 10px 25px;
+}
+.offPrice{
+    border-radius: 20px;
+    top: 8px;
+    left: 8px;
+}
+
+
