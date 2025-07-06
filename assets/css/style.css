@@ -285,7 +285,9 @@ header {
 .custom-radio input[type="radio"] {
     display: none;
 }
-
+.pointer{
+    cursor: pointer;
+}
 .radioRed {
     width: 20px;
     height: 20px;
@@ -325,6 +327,22 @@ header {
     appearance: none;
     background-color: rgb(0, 0, 0);
 }
+.radioBrown {
+    border: 2px solid rgb(167, 72, 38);
+}
+
+.custom-radio .brown:checked+.radioBrown {
+    appearance: none;
+    background-color:  rgb(167, 72, 38);
+}
+.radioOrange {
+    border: 2px solid rgb(218, 78, 27);
+}
+
+.custom-radio .orange:checked+.radioOrange {
+    appearance: none;
+    background-color:  rgb(218, 78, 27);
+}
 .padding{
     padding: 10px 25px;
 }
@@ -332,6 +350,13 @@ header {
     border-radius: 20px;
     top: 8px;
     left: 8px;
+}
+.owlItem1 img{
+    width: 450px;
+    height: 350px;
+}
+.owlItem1 {
+    margin: 20px;
 }
 
 
