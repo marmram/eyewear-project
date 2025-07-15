@@ -220,7 +220,7 @@
         <div class="container">
             <div class="bestDealsBox text-center mt-5">
                 <h2 class="fw-bold">Today's Best Deals</h2>
-                <div class="owl-carousel owl-theme position-relative">
+                <div class="owl-carousel owl-four owl-theme position-relative">
                     <div class="owlItem">
                         <div class="position-relative">
                             <span class="py-1 px-2 bg-danger text-white position-absolute offPrice">20% OFF</span>
@@ -307,7 +307,7 @@
         <div class="container">
             <div class="recentliViewedBox text-center mt-5">
                 <h2 class="fw-bold">Recently Viewed</h2>
-                <div class="owl-carousel position-relative">
+                <div class="owl-carousel owl-four  position-relative">
                     <div class="owlItem">
                         <div>
                             <img src="assets/images/slider/gray.jpg" alt="">
@@ -454,7 +454,7 @@
     </section>
     <!-- Material-Permium -->
 
-    <section class="banner m-5">
+    <section class="banner my-5">
         <div class="container d-flex justify-content-between align-items-center gap-5">
             <div class="bannerItem position-relative">
 
@@ -663,23 +663,33 @@
     <section class="Ordering">
         <div class="container text-center mt-4">
             <h2 class="bold">have Glasses Questions?</h2>
-            <p class="fontSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi,
+            <p class="fontSmall text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi,
                 quam, voluptas suscipit facere labore, unde qui ab mollitia corporis iure voluptatem. <br>
                 Necessitatibus voluptates amet veniam, neque corrupti odio omnis! <a href=""> Lorem ipsum</a> dolor sit
                 amet consectetur
                 adipisicing elit. Modi placeat veniam consequuntur <br>
-                atque quo exercitationem eius velit asperiores, similique nesciunt assumenda fugiat commodi quis ipsum
-                iste eligendi sit, consectetur fuga. <a href=""> Lorem ipsum</a> dolor <br>
-                sit amet consectetur adipisicing elit. Reprehenderit quam commodi aspernatur libero? Hic pariatur eaque
-                doloremque ex repudiandae ad molestiae, unde <br>
-                impedit velit numquam nam fuga illo tempore tempora.</p>
-        </div>
-        <div class="questionsIcones d-grid w-100">
-            <div class="qItem ">
-                <img src="assets/images/qIcon1.png" alt="">
-                <p><a href="#">How to Read a Prescription</a></p>
+                atque quo exercitationem eius velit asperiores, <a href=""> Lorem ipsum</a> dolor. </p>
+
+            <div class="questionsIcones">
+                <div class="qItem ">
+                    <img src="assets/images/qIcon1.png ">
+                    <p><a href="#">How to Read a Prescription</a></p>
+                </div>
+                <div class="qItem ">
+                    <img src="assets/images/qIcon2.png">
+                    <p><a href="#">Pupillary Distance</a></p>
+                </div>
+                <div class="qItem ">
+                    <img src="assets/images/qIcon3.png">
+                    <p><a href="#">Frames & Face Shapes</a></p>
+                </div>
+                <div class="qItem ">
+                    <img src="assets/images/qIcon4.png">
+                    <p><a href="#">How to Buy Glasses Online</a></p>
+                </div>
             </div>
         </div>
+
     </section>
     <br>
     <br>
@@ -691,36 +701,37 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel(
-                {
-                    itemes: 4,
-                    loop: true,
-                    autoPlay: true,
-                    dots: false,
-                    nav: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 3
-                        },
-                        1000: {
-                            items: 4
-                        }
-                    }
-                }
-            );
 
-        });
 
 
     </script>
+    <!-- <script>
+        $(document).ready(function () {
+            $('.owl-Carousel').owlCarousel({
+
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+
+            });
+        });
+    </script> -->
+
     <script>
         $(document).ready(function () {
             $('.owl-three').owlCarousel({
-
+                items: 3,
                 loop: true,
                 margin: 10,
                 nav: true,
@@ -739,7 +750,28 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-four').owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
 
+            });
+        });
+    </script>
 </body>
 
 </html>
