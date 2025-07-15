@@ -11,7 +11,12 @@
      --drop-co: #fffbf6;
      --theme-co: #d39d4e;
      --hover: rgb(82, 78, 78);
-     --grayBg: #f9f3f3;
+     --grayBg: #F9F9F9;
+
+ }
+
+ .fontSmall {
+     font-size: 14px;
 
  }
 
@@ -429,7 +434,7 @@
 
  .Ordering {
      color: #000;
-     background-color: var(--grayBg) ;
+     background-color: var(--grayBg);
      padding: 70px 20px;
      width: 100%;
      height: 100%;
@@ -472,4 +477,40 @@
      font-size: 14px;
      text-align: left;
      color: var(--gray);
+ }
+
+ /****************************************** eyeBuyDirect styles *********************************************/
+
+ .eyeBuyDirect {
+     text-align: left;
+
+ }
+
+ .eyeBuyDirect p {
+     font-size: 14px;
+
+ }
+
+  /****************************************** Question section styles *********************************************/
+
+
+ .questionsIcones {
+     display: grid;
+     grid-template-columns: repeat(4, 150px);
+     width: 100%;
+     height: 100%;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .qItem {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .qItem img,
+ .qItem p {
+     width: 110px;
  }
